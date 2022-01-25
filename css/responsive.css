@@ -1,0 +1,154 @@
+@media screen and (max-width: 900px){
+
+  
+    .fp-tableCell{
+        vertical-align: unset;
+    }
+   
+    .righttopsection{
+        width: 100%;
+    }
+
+    .toprighttopsection {
+        width: 15%;
+    }
+    .bottomrighttopsection a {
+        width: 15%;
+    }
+
+
+    .middlesection {
+        z-index: 3;
+        width: 90%;
+        display: flex;
+        justify-content: space-evenly;
+        margin-left: 5%;
+        overflow: hidden;
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .middletext{
+        width: 100%;
+        font-size: min(20px);
+        text-align: center;
+        z-index: 1;
+    }
+
+    .bottomfirstsection{
+        width: 100%;
+        background: #3DAAEC;
+        padding:none;
+        height:18%;
+        margin-top: -3%;
+    }
+    .island {
+        width: 32%;
+        min-width: 210px;
+        margin-top: -20%;
+    }
+
+
+    /* section two */
+
+    .fish{
+        justify-content: center;
+    }
+    
+
+    .middlesectiontwo{
+        flex-direction: column;
+        width: 100%;
+        min-width: 371px;
+        margin-left:unset;
+    }
+    .rightsectiontwo {
+        width: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: end;
+        margin-right: 24%;
+        min-width: 88px;
+    }
+
+    .leftsectiontwo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 12%;
+        font-size: min(23px);
+    }
+
+    .middlesectiontwo img {
+        width: 100%;
+    }
+
+    /* section three */
+
+    .middlesectionthree{
+        width: 100%;
+        height: 80%;
+        flex-direction: column;
+        margin-top: unset;
+        margin-left: unset;
+        justify-content: space-evenly;
+    }
+
+    .rightsectionthree{
+        width:100%;
+
+    }
+
+    /* ----section four ---- */
+
+
+
+    .middlesectionfour{
+        flex-direction: column;
+        width: 100%;
+        height:100%;
+        margin-left:unset;
+        justify-content: space-evenly;
+    }
+    .leftsectionfour{
+        width:100%;
+        text-align: center;
+    }
+
+    #twitter, #github{
+        width: 19%;
+    }
+
+    #linkedin{
+        width:30%;
+    }
+
+
+
+    /* --------------------  nav bar  ------------------------ */
+    nav{
+        position: fixed;
+        top: 70%;
+        left: 8%;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        justify-content: space-between;
+        height: 130px;
+        
+    }
+
+    nav a{
+        width: 25px;
+        height: 10px;
+        border-radius: 20px;
+        background: white;
+        transition: 1s;
+    }
+
+    .active{
+        width:50px;
+        height: 15px;
+    }
+}

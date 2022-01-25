@@ -1,0 +1,354 @@
+@font-face {
+    font-family: 'cartoon';
+    src: url("../assets/SHOWG.TTF")
+}
+
+html, body{
+    margin: 0;
+    padding:0;
+    font-family: "cartoon";
+    
+}
+
+
+section{
+    height: 100vh;
+}
+
+img{
+    width: 100%;
+}
+
+.firstsection{
+    width:100%;
+    background: rgb(122,199,250);
+    background: linear-gradient(180deg, rgba(122,199,250,1) 64%, rgba(61,170,236,1) 65%, rgba(61,170,236,1) 65%);
+    display: flex;
+    flex-direction: column;
+    transition: 1s;
+    margin-top: 0;
+    padding-top: 2%
+
+}
+
+.topsection{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+    
+}
+
+.lefttopsection{
+    padding-left: 4%;
+    /* padding-top: 3%; */
+    width:10%;
+    /* min-width: 133px; */
+}
+.righttopsection{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.righttopsection a{
+    display: flex;
+}
+
+.toprighttopsection{
+    padding-top: 8%;
+    width: 20%;
+}
+
+.bottomrighttopsection{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.bottomrighttopsection a{
+    width: 20%;
+}
+
+#cloudone{
+   min-width: 100px;
+    animation: 1.5s showRight;
+}
+
+#cloudtwo{
+    min-width: 100px;
+    animation: 1s showRight;
+}
+
+#cloudthree{
+    min-width: 100px;
+    animation: 1.9s showRight;
+}
+
+
+
+.middlesection{
+    z-index: 3;
+    width:62%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 22%;
+    overflow: hidden;
+    
+    
+}
+
+.middletext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 2vw;
+    padding-top: 5%;
+    animation: 1s showText ;
+    width: 465px;
+
+}
+
+.middletext h1{
+    margin: 0;
+}
+
+.island{
+    width: 32%;
+}
+
+.bottomfirstsection{
+    width: 100%;
+    background: #3DAAEC;
+    height: 18%;
+    margin-top: -3%;
+}
+
+
+.sectiontwo{
+    /* margin-top: -10%; */
+    width:100%;
+    background: rgb(59,171,236);
+    background: linear-gradient(180deg, rgba(59,171,236,1) 0%, rgba(90,143,214,1) 46%, rgba(0,18,255,1) 100%);
+    display: flex;
+    flex-direction: column;
+    padding-top: 2%;
+}
+
+.fish{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.fish img{
+    width: 31%;
+    padding-right: 17%;
+    min-width: 245px;
+}
+
+.middlesectiontwo, .middlesectionthree, .middlesectionfour{
+    width:67%;
+    margin-left: 22%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+.middlesectiontwo img{
+    width: 120px;
+    
+}
+
+.rightsectiontwo{
+    width: 52%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.righttopsectiontwo, .bottomrightsectiontwo{
+    display: flex;
+    justify-content: space-between;
+    padding: 3%;
+}
+
+#angular{
+    animation: 5s animationbubble linear infinite reverse;
+}
+
+#js{
+    animation: 6s animationbubble linear infinite;
+}
+
+#php{
+    animation: 6.5s animationbubble linear infinite ;
+}
+
+#symfony{
+    animation: 8s animationbubble linear infinite reverse;
+}
+
+#mysql{
+    animation: 7.5s animationbubble linear infinite;
+}
+#docker{
+    animation: 5s animationbubble linear infinite; 
+}
+
+.bluewhale img{
+    width: 427px;
+    animation: 20s animationBlueWhale linear infinite;
+}
+
+
+
+/* section three */
+.sectionthree{
+    width: 100%;
+    background: rgb(0,18,255);
+    background: linear-gradient(180deg, rgba(0,18,255,1) 0%, rgba(6,17,155,1) 46%, rgba(0,0,0,1) 100%);
+    display: flex;
+    align-items: center;
+}
+
+.carousel{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.middlesectionthree{
+    width:75%;
+}
+
+.rightsectionthree{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:80%;
+}
+
+
+.leftcarousel, .rightcarousel{
+    width:10%;
+}
+
+.leftcarousel img, .rightcarousel img{
+    width:100%
+}
+.centercarousel{
+  width:70%;
+  display: flex;
+  overflow: hidden;
+}
+
+.centercarousel img{
+    width:100%;
+    transition: 1s;
+}
+
+
+/* section four */
+
+.sectionfour{
+    width: 100%;
+    background: #000000;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.contact{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.topcontact{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 8% 0%;
+}
+.contact form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.response{
+    width: 80%;
+    color:white;
+    padding: 2%;
+    border-radius: 4px;
+}
+.contact form input[type="text"], .contact form textarea, .contact form input[type="email"] {
+    width: 97%;
+    padding: 1% 1%;
+    margin-top: 3%;
+    font-family: "cartoon";
+}
+
+.contact form input[type="text"] ,.contact form input[type="email"]{
+    height: 35px;
+    border-radius: 4px;
+}
+.contact form input[type="submit"]{
+    width: 77%;
+    border: none;
+    background: white;
+    margin-top: 3%;
+    padding: 1% 1%;
+    font-family: "cartoon";
+    height: 60px;
+    border-radius: 4px;
+    color:black;
+}
+
+.contact form input[type="text"]::placeholder , .contact form textarea::placeholder, .contact form input[type="submit"]::placeholder{
+    font-family: "cartoon";
+    padding: 1% 1%;
+}
+
+/* --------------------  nav bar  ------------------------ */
+nav{
+    position: fixed;
+    top: 50%;
+    left: 8%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-between;
+    height: 130px;
+    
+}
+
+nav a{
+    width: 69px;
+    height: 10px;
+    border-radius: 20px;
+    background: white;
+    transition: 1s;
+}
+
+.active{
+    width:120px;
+    height: 15px;
+}
+
+
+
+
+

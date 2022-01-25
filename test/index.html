@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfCHzAeAAAAAIl4ZuaxBBy88krR3MKbRkT3R3Pe"></script>
+    <title>Document</title>
+</head>
+<body>
+    <form action="index.html" method="POST">
+        <div class="response">
+            
+        </div>
+        <input type="text" placeholder="entrez votre nom" id="name">
+        <input type="email" placeholder="entrez votre adresse E-mail" id="email">
+        <textarea cols="30" rows="10" placeholder="redigez votre text ici" id="text"></textarea>
+        <input type="submit" id="submit" >
+    </form>
+
+    <script>
+        let submit = document.querySelector("#submit");
+
+        submit.addEventListener("click", function(e){
+            e.preventDefault();
+            grecaptcha.ready(function() {
+                grecaptcha.execute('6LfCHzAeAAAAAIl4ZuaxBBy88krR3MKbRkT3R3Pe', {action: 'submit'}).then(function(token) {
+                    
+                    let name = document.querySelector("#name");
+                    let email = document.querySelector("#email");
+                    let text = document.querySelector("#text");
+                    let json =   {
+                        "token" : token,
+                        "name" : name.value,
+                        "email" : email.value,
+                        "text" : text.value,
+                    }
+
+                    console.log(json);
+
+                    fetch("https://boomwerk.alwaysdata.net/test/php/mail.php", {
+                        method:"POST",
+                        headers: {
+                            'Content-Type' : 'application/json'
+                        },
+                        body: JSON.stringify(json)
+                    }).then( (res) => {
+                        return res.json();
+
+                    }).then((data) => {
+                        
+                        console.log(data);
+                    
+                    })
+
+                });
+        });
+
+
+        })
+      </script>
+</body>
+</html>
