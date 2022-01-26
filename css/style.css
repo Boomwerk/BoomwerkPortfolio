@@ -130,7 +130,6 @@ img{
 
 
 .sectiontwo{
-    /* margin-top: -10%; */
     width:100%;
     background: rgb(59,171,236);
     background: linear-gradient(180deg, rgba(59,171,236,1) 0%, rgba(90,143,214,1) 46%, rgba(0,18,255,1) 100%);
@@ -253,6 +252,7 @@ img{
 .centercarousel img{
     width:100%;
     transition: 1s;
+    flex-shrink: 0;
 }
 
 
